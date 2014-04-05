@@ -1,0 +1,17 @@
+'''dmon configuration'''
+
+# Web page template settings
+page_title = 'Your Network | Dmon'
+page_heading = 'Your Network Status'
+
+# Database configuration
+db_connection_string = 'mongodb://localhost:27017/'
+
+# Host (or IP) to ping; google is generally up
+ping_host = 'google.com'
+
+# List of services you want to monitor
+services = [
+    ('IRC', ('10.0.1.2', 6667)),
+    ('SMTP', ('10.0.1.3', 587)),
+    ('IMAP', ('10.0.1.3', 993))]
