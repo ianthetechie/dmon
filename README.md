@@ -25,3 +25,7 @@ Dependencies
 After all dependencies are installed, copy all of the .sample files and rename
 them without the .sample extension, and edit the files to match your setup.
 A sample adapter.wsgi has been included, and should work with apache or nginx.
+
+Finally, set up a cron job to run dmon_service.py once/minute, so that you
+actually have some data ;) The dmon service automatically purges data older
+than 30 days to conserve space.
