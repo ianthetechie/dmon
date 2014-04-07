@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Four Man Dungeon Dmon</title>
+    <title>{{ page_title }}</title>
     <link rel="stylesheet" href="css/foundation.min.css" />
     <script src="js/vendor/modernizr.min.js"></script>
     <style type="text/css">
@@ -40,13 +40,12 @@
     
     <div class="row">
       <div class="small-12 columns">
-        <h1>Four Man Dungeon Network Status</h1>
+        <h1>{{ page_heading }}</h1>
       </div>
     </div>
 
     <div class="row">
       <div class="small-12 columns">
-        <h5>How sucky is our connection today?</h5>
 
         <h6>Average ping to google.com</h6>
         % for timeframe in timeframes:
