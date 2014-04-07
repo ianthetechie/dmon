@@ -35,11 +35,17 @@ def get_ping_averages_newer_than(delta):
         }
     }
     
-    result = db.ping.aggregate([
-        {'$match': timestamp_newer_than(delta)},
-        avg
-    ])['result'][0]
-
+    try:
+        result = db.ping.aggregate([
+            {'$match': timestamp_newer_than(delta)},
+            avg
+        ])['result'][0]
+    except:
+        result = {
+            'avg_rtt': -1,
+            'avg_loss': 0
+        }
+        
     return {
         'rtt': result['avg_rtt'],
         'loss': result['avg_loss']
