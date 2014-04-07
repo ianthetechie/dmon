@@ -3,6 +3,7 @@
 # Web page template settings
 page_title = 'Your Network | Dmon'
 page_heading = 'Your Network Status'
+page_subheading = None # Insert a goofy subheading or just leave it blank
 
 # Database configuration
 db_connection_string = 'mongodb://localhost:27017/'

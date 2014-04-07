@@ -99,6 +99,7 @@ def index():
     return {
         'page_title': config.page_title,
         'page_heading': config.page_heading,
+        'page_subheading': config.page_subheading if hasattr(config, 'page_subheading') else None,
         'timeframes': timeframes,
         'current_ping': ping_data,
         'services': services,

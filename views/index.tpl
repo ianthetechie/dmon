@@ -46,6 +46,9 @@
 
     <div class="row">
       <div class="small-12 columns">
+        %if page_subheading:
+        <h5>{{ page_subheading }}</h5>
+        %end
 
         <h6>Average ping to google.com</h6>
         % for timeframe in timeframes:
