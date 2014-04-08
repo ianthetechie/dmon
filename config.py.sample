@@ -1,7 +1,8 @@
 '''dmon configuration'''
 
 # Server configuration
-base_url = ''     # No trailing slash. Set to empty string if app exists at the base URL (e.g. http://mysite.com/)
+base_url = ''     # No trailing slash. (e.g. '/dmon')
+				  # If app exists at the base URL (e.g. http://mysite.com/), set to empty string: ''
 
 # Web page template settings
 page_title = 'Your Network | Dmon'
