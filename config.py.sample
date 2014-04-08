@@ -2,12 +2,12 @@
 
 # Server configuration
 base_url = ''     # No trailing slash. (e.g. '/dmon')
-				  # If app exists at the base URL (e.g. http://mysite.com/), set to empty string: ''
+                  # If app exists at the base URL (e.g. http://mysite.com/), set to empty string: ''
 
 # Web page template settings
 page_title = 'Your Network | Dmon'
 page_heading = 'Your Network Status'
-page_subheading = None # Insert a goofy subheading or just leave it blank
+page_subheading = None  # Insert a goofy subheading or just leave it blank
 
 # Database configuration
 db_connection_string = 'mongodb://localhost:27017/'
