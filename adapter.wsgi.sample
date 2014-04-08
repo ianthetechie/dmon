@@ -1,6 +1,6 @@
 import sys, os, bottle
 
-sys.path = ['/var/www/dmon/'] + sys.path
+sys.path = ['/home/mhamann/git/dmon/'] + sys.path
 os.chdir(os.path.dirname(__file__))
 
 import dmon

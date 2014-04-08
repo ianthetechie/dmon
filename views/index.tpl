@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page_title }}</title>
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <script src="js/vendor/modernizr.min.js"></script>
+    <link rel="stylesheet" href="{{ base_url }}/css/foundation.min.css" />
+    <script src="{{ base_url }}/js/vendor/modernizr.min.js"></script>
     <style type="text/css">
       div.progress {
         background-color: #999;
@@ -70,9 +70,9 @@
       Developed by Bored-H4x0rs-R-Us. Sponsored by Insomniac Productions.
     </div>
     
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/dmon.js"></script>
+    <script src="{{ base_url }}/js/vendor/jquery.min.js"></script>
+    <script src="{{ base_url }}/js/foundation.min.js"></script>
+    <script src="{{ base_url }}/js/dmon.js"></script>
     <script>
       $(document).foundation();
       $(document).ready(function() {

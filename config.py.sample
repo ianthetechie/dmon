@@ -1,5 +1,8 @@
 '''dmon configuration'''
 
+# Server configuration
+base_url = ''     # No trailing slash. Set to empty string if app exists at the base URL (e.g. http://mysite.com/)
+
 # Web page template settings
 page_title = 'Your Network | Dmon'
 page_heading = 'Your Network Status'
@@ -13,6 +16,5 @@ ping_host = 'google.com'
 
 # List of services you want to monitor
 services = [
-    ('IRC', ('10.0.1.2', 6667)),
-    ('SMTP', ('10.0.1.3', 587)),
-    ('IMAP', ('10.0.1.3', 993))]
+    
+]

@@ -9,6 +9,9 @@ import config
 from bson import json_util
 from bottle import *
 
+
+BaseTemplate.defaults['base_url'] = config.base_url
+
 # JSON datetime helper
 class JSONDefaultPlugin(JSONPlugin):
     def __init__(self):
