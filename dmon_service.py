@@ -57,10 +57,10 @@ def check_service(name, addr):
             if '%d/' % (port) in line and 'open' in line:
                 nmap_data['online'] = True
 
-        db.servicemon.remove({'service': name})
         db.servicemon.insert(nmap_data)
         
 if __name__ == '__main__':
+    db.servicemon.remove()  # Clear previous entries in case a service is removed
     for service, addr in config.services:
         check_service(service, addr)
         
