@@ -17,6 +17,14 @@ def update_ping(host):
     
     if err:
         print 'Error', err
+
+        ping_data = {
+            'timestamp': datetime.datetime.utcnow(),
+            'loss': 100
+        }
+
+        db.ping.insert(ping_data)
+        db.ping.remove({'timestamp': {'$lt': ping_data['timestamp'] - datetime.timedelta(days=30)}})
     else:
         ping_data = {
             'timestamp': datetime.datetime.utcnow()
